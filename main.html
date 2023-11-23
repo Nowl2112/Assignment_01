@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: black;
+            padding: 20px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header .links a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .links a {
+            float: left;
+            color: white; 
+            text-decoration: none; 
+            padding: 12px 20px; 
+        }
+        .center-logo{
+            margin:-20;
+        }
+        .center-logo {
+            
+            text-align: center;
+            background-color:white ;
+            padding: 0pxpx;
+        }
+
+        .latest-film{
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+        .latest-film-body{text-align: center;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .lf-body{
+            min-width: 50%;
+            max-width: 50%;
+        }
+        .lf-body iframe{border: solid;
+                border-color: black;
+                border-radius: 15px;  
+                border-width: 5px;}
+        .bottom{
+            background-color: black;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .category_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .category_links a{color:white;
+        font-size: 16px;}
+        .related_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .related_links a{color:white;
+        font-size: 16px;}
+        .category_links{padding-right:50px}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a class="logo" ><img src="home_logo.png" ></a>
+        <div class="links">
+            <a class="home" href="#">Home</a>
+            <a class="Films" href="#">Contact</a>
+            <a class="merchandise" href="#">Merchandise</a>
+            <a class="help" href="#">Help</a>
+        </div>
+    </div>
+    <div class="center-logo">
+        <img src="totoro.png" height=600px>
+    </div>
+    <div class="latest-film">
+        <h1 id="lf-head">Latest Film</h1>
+    </div>
+    <div class="latest-film-body">
+        <div class="lf-body" id="trail">
+            <h1>Trailer</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f7EDFdA10pg?si=gQRUvYF3UIAoTO_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lf-body" id="desc">
+            <h1 id="title"> Boy And The Heron</h1>
+            <p id="lf-desc">Description</p>
+        </div>
+        </div>
+        <div class="bottom"> 
+            <div class="category_links">
+                <h1>Category Links</h1>
+                <ul>
+                    <li><a style="text-decoration:none" href="file:///C:/Users/baoxu/OneDrive/Desktop/Assignment_01/main.html">Return To Home</a></li>
+                    <li><a style="text-decoration: none;"href="file:///C:/Users/baoxu/OneDrive/Desktop/Assignment_01/film_list.html">Films</a></li>
+                    <li><a style="text-decoration: none;" href="'">Help</a></li>
+                </ul>
+            </div>
+            <div class="related_links">
+                <h1>Related Links</h1>
+                <ul>
+                    <li><a style="text-decoration:none" href="">Ghibli Museum, Mitaka</a></li>
+                    <li><a style="text-decoration:none" href="">Ghibli Park</a></li>
+                    <li><a style="text-decoration:none" href="">Official LINE</a></li>
+                    <li><a style="text-decoration:none" href="">Walt Disney (Blu-ray/DVD)</a></li>
+                </ul>
+            </div>
+            <div> <img src= ></div>
+        </div>
+</body>
+</html>
