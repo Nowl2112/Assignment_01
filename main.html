@@ -6,6 +6,7 @@
     <title>Your Website Title</title>
 
     <style>
+        @media(min-width:1000px){
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -49,11 +50,15 @@
             margin:-20;
         }
         .center-logo {
-            
+            width: 100%;
             text-align: center;
             background-color:rgb(106, 196, 252) ;
             padding: 0pxpx;
+
         }
+        .center-logo img{
+            height:600px;
+            width:868px}
 
         .latest-film{
             margin-top: -25px;
@@ -70,16 +75,141 @@
             
         }
         .lf-body{
-            width:50%;
-            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            flex-wrap:nowrap;
             
 
         }
-        .lf-body p{text-align: left;
+        .lf-body p{
+            margin-left: 20px;
+            text-align: left;
             font-size: 24px;
             padding: 20px;
-            margin-top: 50px;}
-        .lf-body iframe{border: solid;
+            width: 400px;
+            margin-top: 0px;}
+        .lf-body iframe{
+            max-width: 560px;
+            max-height: 315px;
+            height: calc(100vw * 315 / 560);
+            margin:0 auto;
+            border: solid;
+            border-color: black;
+            border-radius: 15px;  
+            border-width: 5px;}
+        .bottom{
+            background-color: black;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .category_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .category_links a{color:white;
+        font-size: 16px;}
+        .related_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .related_links a{color:white;
+        font-size: 16px;}
+        .category_links{padding-right:50px;
+            width:250px;}
+        #title{text-align: center;}
+        .bottom-img{text-align: right;}
+
+
+
+        }
+        @media(max-width:1000px){
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+            padding: 20px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 12px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header .links a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .links a {
+            float: left;
+            color: white; 
+            text-decoration: none; 
+            padding: 12px 20px; 
+        }
+        .center-logo{
+            margin:-20;
+        }
+        .center-logo {
+            
+            text-align: center;
+            background-color:rgb(106, 196, 252) ;
+            padding: 0pxpx;
+        }
+        .center-logo img{
+            height:250px;
+            width:100%}
+
+        .latest-film{
+            margin-top: -25px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            max-width: 100%;
+        }
+        .latest-film-body{text-align: center;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 20px;
+            flex-wrap: wrap;
+            
+        }
+        .lf-body{
+            display: flex;
+            flex-direction: row;
+            width:100%;
+            flex-wrap:wrap;
+            
+
+        }
+        .lf-body p{
+            margin-left: 20px;
+            text-align: left;
+            font-size: 16px;
+            padding: 20px;
+            width: 400px;
+            margin-top: 0px;}
+        .lf-body iframe{
+                max-width: 560px;
+                max-height: 315px;
+                height: calc(100vw * 315 / 560);
+                margin:0 auto;
+                border: solid;
                 border-color: black;
                 border-radius: 15px;  
                 border-width: 5px;
@@ -100,12 +230,15 @@
             margin-left: 20px;}
         .related_links a{color:white;
         font-size: 16px;}
-        .category_links{padding-right:50px}
+        .category_links{padding-right:50px;
+            width:250px;}
         #title{text-align: center;}
+        .bottom-img{text-align: right;
+            width: 0px;}
 
 
 
-
+        }
     </style>
 </head>
 <body>
@@ -120,7 +253,7 @@
         </div>
     </div>
     <div class="center-logo">
-        <img src="totoro.png" height=600px>
+        <img src="totoro.png" >
     </div>
     <div class="latest-film">
         <h1 id="lf-head" film_list.html>Latest Film</h1>
@@ -129,7 +262,7 @@
     <div class="latest-film-body">
 
         <div class="lf-body" id="trail">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/f7EDFdA10pg?si=gQRUvYF3UIAoTO_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="900" height="506 " src="https://www.youtube.com/embed/f7EDFdA10pg?si=gQRUvYF3UIAoTO_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="lf-body" id="desc">
             <p id="lf-desc">A young boy named Mahito yearning for his mother ventures into a world shared by the living and the dead. There, death comes to an end, and life finds a new beginning. A semi-autobiographical fantasy from the mind of Hayao Miyazaki.</p>
@@ -153,7 +286,7 @@
                     <li><a style="text-decoration:none" href="">Walt Disney (Blu-ray/DVD)</a></li>
                 </ul>
             </div>
-            <div> <img src= ></div>
+            <div class="bottom-img"> <img src="imgbin_catbus-chibiusa-drawing-studio-ghibli-png.png"  width="50%" ></div>
         </div>
 </body>
 </html>

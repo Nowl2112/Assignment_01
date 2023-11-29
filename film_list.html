@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+
+    <style>
+        @media (min-width:1000px){
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: black;
+            padding: 20px 10px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header .links a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .links a {
+            float: left;
+            color: white; 
+            text-decoration: none; 
+            padding: 12px 20px; 
+        }
+
+        .bottom{
+            background-color: black;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .category_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .category_links a{color:white;
+        font-size: 16px;}
+        .related_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .related_links a{color:white;
+        font-size: 16px;}
+        .category_links{padding-right:50px}
+        .film{display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-bottom: solid;
+            border-color: black;
+
+            border-width: 5px;
+            padding-bottom: 20px;
+            }
+
+        .film-body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;}
+        }
+         .film-body iframe{
+                margin: 0 auto;
+                border: solid;
+                border-color: black;
+                border-radius: 15px;  
+                border-width: 5px;}
+@media (max-width:1000px){
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: black;
+            padding: 20px 10px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 12px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header .links a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .links a {
+            float: left;
+            color: white; 
+            text-decoration: none; 
+            padding: 12px 20px; 
+        }
+
+        .bottom{
+            background-color: black;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .category_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .category_links a{color:white;
+        font-size: 16px;}
+        .related_links h1{font-size: 24px;
+            margin-left: 20px;}
+        .related_links a{color:white;
+        font-size: 16px;}
+        .category_links{padding-right:50px;}
+        .film{display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-bottom: solid;
+            border-color: black;
+
+            border-width: 5px;
+            padding-bottom: 20px;
+            }
+
+        .film-body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;}
+        
+        .film-body iframe {
+            margin: 0 auto;
+            width: 95%;
+            max-width: 560px;
+            max-height: 315px;
+            height: calc(100vw * 315 / 560);
+            border: solid;
+            border-color: black;
+            border-radius: 15px;
+            border-width: 5px;
+            
+        }
+        .bottom-img{width: 0px;}
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a class="logo" ><img src="home_logo.png" ></a>
+        <div class="links">
+            <a class="home" href="main.html">Home</a>
+            <a class="Films" href="film_list.html" style="background-color: gray; color: white;">Films</a>
+            <a class="merchandise" href="#">Merchandise</a>
+            <a class="help" href="#">Help</a>
+        </div>
+    </div>
+    <div class="film" id="Nausicaä">
+            <div class="film-body" id="trail">
+                <h1>Trailer</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6zhLBe319KE?si=r80nQRf4uBfp7kYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
+            <div class="film-body" id="desc">
+                <h1 id="title"> Nausicaä of the Valley of the Wind</h1>
+                <p id="fl-desc">Description</p>
+            </div>
+    </div>
+    <div class="film" id="Laputa">
+        <div class="film-body" id="trail">
+            <h1>Trailer</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8ykEy-yPBFc?si=kiJDIa-YvxIytT2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+        <div class="film-body" id="desc">
+            <h1 id="title"> Laputa: Castle in the sky</h1>
+            <p id="fl-desc">Description</p>
+        </div>
+    </div>
+    <div class="film" id="Laputa">
+        <div class="film-body" id="trail">
+            <h1>Trailer</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4vPeTSRd580?si=hYJKGqE3TIRcLv8p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="film-body" id="desc">
+            <h1 id="title"> Grave of the fireflies</h1>
+            <p id="fl-desc">Description</p>
+        </div>
+    </div>
+    <div class="bottom"> 
+        <div class="category_links">
+            <h1>Category Links</h1>
+            <ul>
+                <li><a style="text-decoration:none" href="main.html">Return To Home</a></li>
+                <li><a style="text-decoration: none;"href="film_list.html" >Films</a></li>
+                <li><a style="text-decoration: none;" href="'">Help</a></li>
+            </ul>
+        </div>
+        <div class="related_links">
+            <h1>Related Links</h1>
+            <ul>
+                <li><a style="text-decoration:none" href="">Ghibli Museum, Mitaka</a></li>
+                <li><a style="text-decoration:none" href="">Ghibli Park</a></li>
+                <li><a style="text-decoration:none" href="">Official LINE</a></li>
+                <li><a style="text-decoration:none" href="">Walt Disney (Blu-ray/DVD)</a></li>
+            </ul>
+        </div>
+        <div class="bottom-img"> <img src="imgbin_catbus-chibiusa-drawing-studio-ghibli-png.png"  width="50%" ></div>
+    </div>
+
+</body>
+</html>
