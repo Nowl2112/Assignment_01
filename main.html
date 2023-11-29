@@ -12,6 +12,7 @@
         }
 
         .header {
+            width: 100%;
             overflow: hidden;
             background-color: black;
             padding: 20px 10px;
@@ -50,28 +51,39 @@
         .center-logo {
             
             text-align: center;
-            background-color:white ;
+            background-color:rgb(106, 196, 252) ;
             padding: 0pxpx;
         }
 
         .latest-film{
+            margin-top: -25px;
             text-align: center;
             color: white;
             background-color: black;
+            max-width: 100%;
         }
         .latest-film-body{text-align: center;
             display: flex;
             flex-direction: row;
+            padding-bottom: 20px;
+            flex-wrap: wrap;
             
         }
         .lf-body{
-            min-width: 50%;
-            max-width: 50%;
+            width:50%;
+            flex-wrap: wrap;
+            
+
         }
+        .lf-body p{text-align: left;
+            font-size: 24px;
+            padding: 20px;
+            margin-top: 50px;}
         .lf-body iframe{border: solid;
                 border-color: black;
                 border-radius: 15px;  
-                border-width: 5px;}
+                border-width: 5px;
+            }
         .bottom{
             background-color: black;
             color: white;
@@ -89,6 +101,7 @@
         .related_links a{color:white;
         font-size: 16px;}
         .category_links{padding-right:50px}
+        #title{text-align: center;}
 
 
 
@@ -101,7 +114,7 @@
         <a class="logo" ><img src="home_logo.png" ></a>
         <div class="links">
             <a class="home" href="#">Home</a>
-            <a class="Films" href="#">Contact</a>
+            <a class="Films" href="film_list.html">Films</a>
             <a class="merchandise" href="#">Merchandise</a>
             <a class="help" href="#">Help</a>
         </div>
@@ -110,24 +123,24 @@
         <img src="totoro.png" height=600px>
     </div>
     <div class="latest-film">
-        <h1 id="lf-head">Latest Film</h1>
+        <h1 id="lf-head" film_list.html>Latest Film</h1>
     </div>
+    <h1 id="title">The Boy And The Heron</h1>
     <div class="latest-film-body">
+
         <div class="lf-body" id="trail">
-            <h1>Trailer</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/f7EDFdA10pg?si=gQRUvYF3UIAoTO_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="lf-body" id="desc">
-            <h1 id="title"> Boy And The Heron</h1>
-            <p id="lf-desc">Description</p>
+            <p id="lf-desc">A young boy named Mahito yearning for his mother ventures into a world shared by the living and the dead. There, death comes to an end, and life finds a new beginning. A semi-autobiographical fantasy from the mind of Hayao Miyazaki.</p>
         </div>
         </div>
         <div class="bottom"> 
             <div class="category_links">
                 <h1>Category Links</h1>
                 <ul>
-                    <li><a style="text-decoration:none" href="file:///C:/Users/baoxu/OneDrive/Desktop/Assignment_01/main.html">Return To Home</a></li>
-                    <li><a style="text-decoration: none;"href="file:///C:/Users/baoxu/OneDrive/Desktop/Assignment_01/film_list.html">Films</a></li>
+                    <li><a style="text-decoration:none" href="main.html">Return To Home</a></li>
+                    <li><a style="text-decoration: none;"href="film_list.html">Films</a></li>
                     <li><a style="text-decoration: none;" href="'">Help</a></li>
                 </ul>
             </div>
