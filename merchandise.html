@@ -94,6 +94,35 @@
             border-color: white;
             border-radius: 10px;
             }
+            .filters{
+            margin-left:-40px ;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            list-style-type:none;
+            background-color: black;
+        }
+        .filters h1{font-size: 18px;
+            color: white;
+            float: left;
+            margin-top: 0px;
+            margin-left: 5px;}
+        .filters a{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            font-size: 18px;
+            margin-left:20px ;}
+        .filters a:hover{background-color: white; 
+            color: black;
+            border-radius: 10px;
+            padding: 5px;
+            
+            }
+            a:visited { 
+        text-decoration: none; 
+        color: white; 
+}
             }
             @media(min-width:1000px){
         body {
@@ -177,12 +206,41 @@
             height: 250px;
             width: 250px;
             }
+        .filters{
+            margin-left: -40px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            list-style-type:none;
+            background-color: black;
+        }
+        .filters h1{font-size: 18px;
+            color: white;
+            float: left;
+            margin-top: 0px;}
+        .filters a{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            font-size: 18px;
+            margin-left:20px ;}
+        .filters a:hover{background-color: white; 
+            color: black;
+            border-radius: 10px;
+            padding: 5px;
+            
+            }
+            a:visited { 
+        text-decoration: none; 
+        color: white; 
+}
         }
         
 
 
         
     </style>
+</head>
     <body>
 
         <div class="header">
@@ -194,38 +252,92 @@
                 <a class="help" href="#">Help</a>
             </div>
         </div>
-        <div class="shop">
-            <div class="product">
+        <ul class="filters">
+            <h1>Filters:</h1>
+            <li data-filter="all" class="active"><a href="#" onclick="filterItems('all')">All</a></li>
+            <li data-filter="shirt" ><a href="#" onclick="filterItems('shirt')">Shirts</a></li>
+            <li data-filter="plush" ><a href="#" onclick="filterItems('plush')">Plushies</a></li>
+            <li data-filter="mug" ><a href="#" onclick="filterItems('mug')">Mugs</a></li>
+        </ul>
+        <ul class="shop">
+            <div class="product" id="plush">
                 <a><img src="totoro plush.jpg"  ></a>
                 <a><p>Totoro Plush</p></a>
                 <a><p>$15</p></a>
             </div>
-            <div class="product">
+            <div class="product" id="plush">
                 <a><img src="cat bus plush.jpeg"  ></a>
                 <a><p>Cat Bus Plush</p></a>
+                <strong>plush</strong>
                 <a><p>$10</p></a>
             </div>
-            <div class="product">
+            <div class="product" id="plush">
                 <a><img src="blu totoro plush.jpeg"  ></a>
                 <a><p>Blue Totoro Plush</p></a>
+                <strong>plush</strong>
                 <a><p>$17</p></a>
             </div>
-            <div class="product">
+            <div class="product"id="plush">
                 <a><img src="white totoro plush.jpeg" ></a>
                 <a><p>White Totoro Plush</p></a>
+                <strong>plush</strong>
                 <a><p>$10</p></a>
             </div>
-            <div class="product">
+            <div class="product" id="shirt" >
                 <a><img src="shirt1.jpeg" ></a>
                 <a><p>Ghibli Element Shirt</p></a>
-                <a><p>$10</p></a>
+                <strong>shirt</strong>
+                <a><p>$20</p></a>
             </div>
-            <div class="product">
+            <div class="product"id="shirt">
                 <a><img src="totoro_shrt.jpg" ></a>
                 <a><p>Totoro Shirt</p></a>
-                <a><p>$10</p></a>
+                <strong>shirt</strong>
+
+                <a><p>$20</p></a>
             </div>
-        </div>
+            <div class="product" id="shirt">
+                <a><img src="how-moving-castle-classic-shirt-800x800.jpg" ></a>
+                <a><p>Howls Moving Castle Shirt</p></a>
+                <strong>shirt</strong>
+
+                <a><p>$20</p></a>
+            </div>
+            <div class="product" id="shirt">
+                <a><img src="ponyo shirt.jpg" ></a>
+                <a><p>Ponyo Ham Shirt</p></a>
+                <strong>shirt</strong>
+
+                <a><p>$20</p></a>
+            </div>
+            <div class="product" id="mug">
+                <a><img src="kiki-mug.jpg" ></a>
+                <a><p>Jiji mug from Kiki's Delivary Service</p></a>
+                <strong>mug</strong>
+                <a><p>$19</p></a>
+            </div>
+            <div class="product" id="mug">
+                <a><img src="Totoro-Family-Grey-Mug.jpg" ></a>
+                <a><p>Totoro Mug</p></a>
+                <strong>mug</strong>
+
+                <a><p>$19</p></a>
+            </div>
+            <div class="product" id="mug">
+                <a><img src="studio-ghibli-circle-mug-1024x1024.jpg" ></a>
+                <a><p>Studio Ghibli Mug</p></a>
+                <strong>mug</strong>
+
+                <a><p>$19</p></a>
+            </div>
+            <div class="product" id="mug">
+                <a><img src="no-face-kaonashi-funny-mug-12oz.jpg" ></a>
+                <a><p>Spirited Away No-Face Mug</p></a>
+                <strong>mug</strong>
+
+                <a><p>$19</p></a>
+            </div>
+        </ul>
         <div class="bottom"> 
             <div class="category_links">
                 <h1>Category Links</h1>
@@ -249,3 +361,24 @@
         </div>
 </body>
 </html>
+<script>
+    function filterItems(category) {
+        var products = document.querySelectorAll('.product');
+
+        products.forEach(function(product) {
+            if (category === 'all' || product.id === category) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+
+        var filters = document.querySelectorAll('.filters li');
+        filters.forEach(function(filter) {
+            filter.classList.remove('active');
+        });
+
+        var activeFilter = document.querySelector('.filters li[data-filter="' + category + '"]');
+        activeFilter.classList.add('active');
+    }
+</script>
