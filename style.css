@@ -444,7 +444,7 @@ font-size: 9px;
         border-bottom: solid;
         border-color: black;
         
-        margin-left: -25px;
+        margin-left: 0 auto;
         border-width: 5px;
         padding-bottom: 20px;
         width: 100%;
@@ -475,9 +475,10 @@ font-size: 9px;
     /*merchendise*/
     .shop{
         margin-top: 25px;
+        margin-left: 25px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;}
+        flex-wrap: wrap;} 
 .product{
         margin-left: 0 auto;
         margin-bottom: 10px;
@@ -618,7 +619,7 @@ text-decoration: none;
 
         
         
-
+.sort-buttons a{text-decoration: none;}
 .sort-buttons h1{padding-left: 10px;}
 .sort-buttons{
     background-color: black;

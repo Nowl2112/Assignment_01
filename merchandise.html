@@ -11,7 +11,7 @@
     <body>
 
         <div class="header">
-            <a class="logo" ><img src="home_logo.png" ></a>
+            <a class="logo" ><img src="home_logo.png" alt="logo"></a>
             <div class="links">
                 <a class="home" href="index.html">Home</a>
                 <a class="Films" href="film_list.html">Films</a>
@@ -20,22 +20,22 @@
             </div>
         </div>
         <ul class="filters">
-            <h1>Filters:</h1>
+            <li><h1>Filter: </h1></li>
             <li data-filter="all" class="active"><a href="#" onclick="filterItems('all')">All</a></li>
             <li data-filter="shirt" ><a href="#" onclick="filterItems('shirt')">Shirts</a></li>
             <li data-filter="plush" ><a href="#" onclick="filterItems('plush')">Plushies</a></li>
             <li data-filter="mug" ><a href="#" onclick="filterItems('mug')">Mugs</a></li>
         </ul>
-        <ul class="shop">
+        <div class="shop">
             <div class="product" id="plush" >
                 
-                <a href="#" id="totoro-plush-popup"><img src="totoro plush.jpg"  ></a>
+                <a href="#" id="totoro-plush-popup"><img src="totoro plush.jpg"  alt="tp"></a>
                 <a ><p>Totoro Plush</p></a>
                 <a ><p>$15</p></a>
                 <div class="popup-window" id="totoro-popup">
                     
                     <button id="close-button">X</button>
-                    <img src="totoro plush.jpg">
+                    <img src="totoro plush.jpg" alt="tp">
                     <h1>Totoro Plush </h1>
 
                     <button id="buy-button">Purchase Now</button>
@@ -62,14 +62,13 @@
                 </script>
                     
                 </div>
-            </div>
             <div class="product" id="plush">
-                <a href="#" id="cat-bus-plush-popup"><img src="cat bus plush.jpeg"></a>
+                <a href="#" id="cat-bus-plush-popup"><img src="cat bus plush.jpeg" alt="cb"></a>
                 <a><p>Cat Bus Plush</p></a>
                 <a><p>$10</p></a>
                 <div class="popup-window" id="catbus-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttoncb">X</button>
-                    <img src="cat bus plush.jpeg">
+                    <img src="cat bus plush.jpeg" alt="cb">
                     <h1 style="padding-top: 200px;">Cat Bus Plush</h1>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttoncb">Purchase Now</button>
                 </div>
@@ -94,12 +93,12 @@
                 </script>
             </div>
             <div class="product" id="plush">
-                <a href="#" id="bt-popup-link"><img src="blu totoro plush.jpeg"  ></a>
+                <a href="#" id="bt-popup-link"><img src="blu totoro plush.jpeg" alt="bt"  ></a>
                 <a><p>Blue Totoro Plush</p></a>
                 <a><p>$17</p></a>
                 <div class="popup-window" id="bt-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonbt">X</button>
-                    <img src="blu totoro plush.jpeg">
+                    <img src="blu totoro plush.jpeg" alt="bt">
                     <h1 style="padding-top: 200px;">Blue Totoro Plush</h1>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonbt">Purchase Now</button>
                 </div>
@@ -124,12 +123,12 @@
                 </script>
             </div>
             <div class="product"id="plush">
-                <a href="#" id="wt-popup-link"><img src="white totoro plush.jpeg" ></a>
+                <a href="#" id="wt-popup-link"><img src="white totoro plush.jpeg" alt="wt" ></a>
                 <a><p>White Totoro Plush</p></a>
                 <a><p>$10</p></a>
                 <div class="popup-window" id="wt-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonwt">X</button>
-                    <img src="white totoro plush.jpeg">
+                    <img src="white totoro plush.jpeg" alt="wt">
                     <h1 style="padding-top: 200px;">White Totoro Plush</h1>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonwt">Purchase Now</button>
                 </div>
@@ -154,12 +153,12 @@
                 </script>
             </div>
             <div class="product" id="shirt" >
-                <a href="#" id="ge-popup-link"><img src="shirt1.jpeg" ></a>
+                <a href="#" id="ge-popup-link"><img src="shirt1.jpeg" alt="ge" ></a>
                 <a><p>Ghibli Element Shirt</p></a>
                 <a><p>$20</p></a>
                 <div class="popup-window" id="ge-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonge">X</button>
-                    <img src="shirt1.jpeg">
+                    <img src="shirt1.jpeg" alt="ge">
                     <h1 style="padding-top: 200px;">Ghibli Element Shirt</h1>
                     <ul >
                         <label for="radio">XS
@@ -201,13 +200,13 @@
                 </script>
             </div>
             <div class="product"id="shirt">
-                <a href="#" id="ts-popup-link"><img src="totoro_shrt.jpg" ></a>
+                <a href="#" id="ts-popup-link"><img src="totoro_shrt.jpg" alt="ts" ></a>
                 <a><p>Totoro Shirt</p></a>
 
                 <a><p>$20</p></a>
                 <div class="popup-window" id="ts-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonts">X</button>
-                    <img src="totoro_shrt.jpg">
+                    <img src="totoro_shrt.jpg" alt="ts">
                     <h1 style="padding-top: 200px;">Totoro Shirt</h1>
                     <ul >
                         <label for="radio">XS
@@ -249,12 +248,12 @@
                 </script>
             </div>
             <div class="product" id="shirt">
-                <a href="#" id="popup-link-hm"><img src="how-moving-castle-classic-shirt-800x800.jpg" ></a>
+                <a href="#" id="popup-link-hm"><img src="how-moving-castle-classic-shirt-800x800.jpg" alt="hm"></a>
                 <a><p>Howl's Moving Castle Shirt</p></a>
                 <a><p>$20</p></a>
                 <div class="popup-window" id="popup-hm">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonhm">X</button>
-                    <img src="how-moving-castle-classic-shirt-800x800.jpg">
+                    <img src="how-moving-castle-classic-shirt-800x800.jpg" alt="hm">
                     <h1 style="padding-top: 200px;">Howl's Moving Castle Shirt</h1>
                     <ul >
                         <label for="radio">XS
@@ -296,13 +295,13 @@
                 </script>
             </div>
             <div class="product" id="shirt">
-                <a href="#" id="popup-link-ps"><img src="ponyo shirt.jpg" ></a>
+                <a href="#" id="popup-link-ps"><img src="ponyo shirt.jpg" alt="ps"></a>
                 <a><p>Ponyo Ham Shirt</p></a>
 
                 <a><p>$20</p></a>
                 <div class="popup-window" id="popup-ps">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonps">X</button>
-                    <img src="ponyo shirt.jpg">
+                    <img src="ponyo shirt.jpg" alt="ps">
                     <h1 style="padding-top: 200px;">Ponyo Ham Shirt</h1>
                     <ul >
                         <label for="radio">XS
@@ -344,12 +343,12 @@
                 </script>
             </div>
             <div class="product" id="mug">
-                <a href="#" id="km-popup-link"><img src="kiki-mug.jpg" ></a>
+                <a href="#" id="km-popup-link"><img src="kiki-mug.jpg" alt="km"></a>
                 <a><p>Jiji mug from Kiki's Delivary Service</p></a>
                 <a><p>$19</p></a>
                 <div class="popup-window" id="km-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonkm">X</button>
-                    <img src="kiki-mug.jpg">
+                    <img src="kiki-mug.jpg" alt="km">
                     <h1 style="padding-top: 200px;">Jiji mug from Kiki's Delivary Service</h1>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonkm">Purchase Now</button>
                 </div>
@@ -374,12 +373,12 @@
                 </script>
             </div>
             <div class="product" id="mug">
-                <a href="#" id="tm-popup-link"><img src="Totoro-Family-Grey-Mug.jpg" ></a>
+                <a href="#" id="tm-popup-link"><img src="Totoro-Family-Grey-Mug.jpg" alt="tm"></a>
                 <a><p>Totoro Mug</p></a>
                 <a><p>$19</p></a>
                 <div class="popup-window" id="tm-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttontm">X</button>
-                    <img src="Totoro-Family-Grey-Mug.jpg">
+                    <img src="Totoro-Family-Grey-Mug.jpg" alt="tm">
                     <h1 style="padding-top: 200px;">Totoro Mug</h1>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttontm">Purchase Now</button>
                 </div>
@@ -404,12 +403,12 @@
                 </script>
             </div>
             <div class="product" id="mug">
-                <a href="#" id="gm-popup-link"> <img src="studio-ghibli-circle-mug-1024x1024.jpg" ></a>
+                <a href="#" id="gm-popup-link"> <img src="studio-ghibli-circle-mug-1024x1024.jpg" alt="gm"></a>
                 <a><p>Studio Ghibli Mug</p></a>
                 <a><p>$19</p></a>
                 <div class="popup-window" id="gm-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttongm">X</button>
-                    <img src="studio-ghibli-circle-mug-1024x1024.jpg">
+                    <img src="studio-ghibli-circle-mug-1024x1024.jpg" alt="gm">
                     <h1 style="padding-top: 200px;">Studio Ghibli Mug</h1>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttongm">Purchase Now</button>
                 </div>
@@ -434,13 +433,13 @@
                 </script>
             </div>
             <div class="product" id="mug">
-                <a href="#" id="nm-popup-link"><img src="no-face-kaonashi-funny-mug-12oz.jpg" ></a>
+                <a href="#" id="nm-popup-link"><img src="no-face-kaonashi-funny-mug-12oz.jpg" alt="nm"></a>
                 <a><p>Spirited Away No-Face Mug</p></a>
 
                 <a><p>$19</p></a>
                 <div class="popup-window" id="nm-popup">
                     <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonnm">X</button>
-                    <img src="no-face-kaonashi-funny-mug-12oz.jpg">
+                    <img src="no-face-kaonashi-funny-mug-12oz.jpg" alt="nm">
                     <h1 style="padding-top: 200px;">Studio Ghibli Mug</h1>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonnm">Purchase Now</button>
                 </div>
@@ -464,14 +463,14 @@
                     });
                 </script>
             </div>
-        </ul>
-        <div class="bottom"> 
+        </div>
+        <div class="bottom" > 
             <div class="category_links">
                 <h1>Category Links</h1>
                 <ul>
                     <li><a style="text-decoration:none" href="index.html">Return To Home</a></li>
-                    <li><a style="text-decoration: none;"href="film_list.html">Films</a></li>
-                    <li><a style="text-decoration: none;"href="merchandise.html">Merchandise</a></li>
+                    <li><a style="text-decoration: none;" href="film_list.html" >Films</a></li>
+                    <li><a style="text-decoration: none;" href="merchandise.html">Merchandise</a></li>
                     <li><a style="text-decoration: none;" href="help.html">Help</a></li>
                 </ul>
             </div>
@@ -484,7 +483,7 @@
                     <li><a style="text-decoration:none" href="">Walt Disney (Blu-ray/DVD)</a></li>
                 </ul>
             </div>
-            <div class="bottom-img"> <img src="imgbin_catbus-chibiusa-drawing-studio-ghibli-png.png"  width="50%" ></div>
+            <div class="bottom-img"> <img src="imgbin_catbus-chibiusa-drawing-studio-ghibli-png.png" alt="bottomimg"  ></div>
         </div>
     
 </body>
