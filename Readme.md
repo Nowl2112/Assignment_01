@@ -9,7 +9,7 @@ It also contains a merchendise store where you can filter out items making findi
 
 This project was started as my family and I are fans of studio Ghibli and I wanted them to be able to view and comment on my work therefore allowing me to make improvements based on others opinions. Some improvements I made based on feedback would be the different ways I was pushed to reduce whitespace in my website (using images or increasing the size of some embedded videos or paragraphs).This website was created with the purpose of making an improved version of the official studio ghibli website .
 
-Wireframe link:
+Wireframe link:https://www.figma.com/file/qGeBkjuoejQrBkeKeVS8pG/Wireframe?type=design&node-id=0%3A1&mode=design&t=EMhNjUvSAQtB2dk2-1
 
 ## Features
 This website has 3 pages. The first is the home page which contains a Latest Film section and a center logo.
@@ -37,7 +37,7 @@ In addition, you may also use this section to discuss plans for additional featu
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
+- used figma for wireframe | Link: https://www.figma.com/
 - Used Github for source control | Link:https://github.com/
 - used html for the websites main code | Link:https://html.com/
 - used css to style the website and make it look better| Link:https://www.w3.org/Style/CSS/Overview.en.html
