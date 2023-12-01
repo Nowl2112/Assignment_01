@@ -15,8 +15,8 @@
             <div class="links">
                 <a class="home" href="index.html">Home</a>
                 <a class="Films" href="film_list.html">Films</a>
-                <a class="merchandise" href="merchandise.html">Merchandise</a>
-                <a class="help" href="#">Help</a>
+                <a class="merchandise" href="merchandise.html"  style="background-color: gray; color: white;">Merchandise</a>
+                <a class="help" href="help.html">Help</a>
             </div>
         </div>
         <ul class="filters">
@@ -39,6 +39,27 @@
                     <h1>Totoro Plush </h1>
 
                     <button id="buy-button">Purchase Now</button>
+                </div>
+                <script>
+                    var totoroPopupLink = document.getElementById("totoro-plush-popup");
+                    var totoroPopupWindow = document.getElementById("totoro-popup");
+                    var closetotoroButton = document.getElementById("close-button");
+                    var buytotoroButton = document.getElementById("buy-button");
+                
+                    totoroPopupLink.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        totoroPopupWindow.style.display = "block";
+                    });
+                
+                    closetotoroButton.addEventListener("click", function () {
+                        totoroPopupWindow.style.display = "none";
+                    });
+                
+                    buytotoroButton.addEventListener("click", function () {
+                        totoroPopupWindow.style.display = "none";
+                        
+                    });
+                </script>
                     
                 </div>
             </div>
@@ -141,14 +162,21 @@
                     <img src="shirt1.jpeg">
                     <h1 style="padding-top: 200px;">Ghibli Element Shirt</h1>
                     <ul >
-                        <label for="xs">XS</label>
-                        <input type="radio" id="xs">
-                        <label for="s">S</label>                        
-                        <input type="radio" id="s">
-                        <label for="m">M</label>
-                        <input type="radio" id="m">                        
-                        <label for="l">L</label>
-                        <input type="radio" id="l">
+                        <label for="radio">XS
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">S
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">M
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">L
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">XL
+                            <input type="radio" name="size">
+                        </label>
                     </ul>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonge">Purchase Now</button>
                 </div>
@@ -182,14 +210,21 @@
                     <img src="totoro_shrt.jpg">
                     <h1 style="padding-top: 200px;">Totoro Shirt</h1>
                     <ul >
-                        <label for="xs">XS</label>
-                        <input type="radio" id="xs">
-                        <label for="s">S</label>                        
-                        <input type="radio" id="s">
-                        <label for="m">M</label>
-                        <input type="radio" id="m">                        
-                        <label for="l">L</label>
-                        <input type="radio" id="l">
+                        <label for="radio">XS
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">S
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">M
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">L
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">XL
+                            <input type="radio" name="size">
+                        </label>
                     </ul>
                     <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonts">Purchase Now</button>
                 </div>
@@ -205,7 +240,7 @@
                     });
                 
                     closetsButton.addEventListener("click", function () {
-                        PopupWindow.style.display = "none";
+                        tsPopupWindow.style.display = "none";
                     });
                 
                     buytsButton.addEventListener("click", function () {
@@ -214,39 +249,220 @@
                 </script>
             </div>
             <div class="product" id="shirt">
-                <a><img src="how-moving-castle-classic-shirt-800x800.jpg" ></a>
-                <a><p>Howls Moving Castle Shirt</p></a>
-
+                <a href="#" id="popup-link-hm"><img src="how-moving-castle-classic-shirt-800x800.jpg" ></a>
+                <a><p>Howl's Moving Castle Shirt</p></a>
                 <a><p>$20</p></a>
+                <div class="popup-window" id="popup-hm">
+                    <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonhm">X</button>
+                    <img src="how-moving-castle-classic-shirt-800x800.jpg">
+                    <h1 style="padding-top: 200px;">Howl's Moving Castle Shirt</h1>
+                    <ul >
+                        <label for="radio">XS
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">S
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">M
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">L
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">XL
+                            <input type="radio" name="size">
+                        </label>
+                    </ul>
+                    <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonhm">Purchase Now</button>
+                </div>
+                <script>
+                    var PopupLinkhm = document.getElementById("popup-link-hm");
+                    var PopupWindowhm = document.getElementById("popup-hm");
+                    var closehmButton = document.getElementById("close-buttonhm");
+                    var buyhmButton = document.getElementById("buy-buttonhm");
+                
+                    PopupLinkhm.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        PopupWindowhm.style.display = "block";
+                    });
+                
+                    closehmButton.addEventListener("click", function () {
+                        PopupWindowhm.style.display = "none";
+                    });
+                
+                    buyhmButton.addEventListener("click", function () {
+                        PopupWindowhm.style.display = "none";
+                    });
+                </script>
             </div>
             <div class="product" id="shirt">
-                <a><img src="ponyo shirt.jpg" ></a>
+                <a href="#" id="popup-link-ps"><img src="ponyo shirt.jpg" ></a>
                 <a><p>Ponyo Ham Shirt</p></a>
 
                 <a><p>$20</p></a>
+                <div class="popup-window" id="popup-ps">
+                    <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonps">X</button>
+                    <img src="ponyo shirt.jpg">
+                    <h1 style="padding-top: 200px;">Ponyo Ham Shirt</h1>
+                    <ul >
+                        <label for="radio">XS
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">S
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">M
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">L
+                            <input type="radio" name="size">
+                        </label>
+                        <label for="radio">XL
+                            <input type="radio" name="size">
+                        </label>
+                    </ul>
+                    <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonps">Purchase Now</button>
+                </div>
+                <script>
+                    var PopupLinkps = document.getElementById("popup-link-ps");
+                    var PopupWindowps = document.getElementById("popup-ps");
+                    var closepsButton = document.getElementById("close-buttonps");
+                    var buypsButton = document.getElementById("buy-buttonps");
+                
+                    PopupLinkps.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        PopupWindowps.style.display = "block";
+                    });
+                
+                    closepsButton.addEventListener("click", function () {
+                        PopupWindowps.style.display = "none";
+                    });
+                
+                    buypsButton.addEventListener("click", function () {
+                        PopupWindowps.style.display = "none";
+                    });
+                </script>
             </div>
             <div class="product" id="mug">
-                <a><img src="kiki-mug.jpg" ></a>
+                <a href="#" id="km-popup-link"><img src="kiki-mug.jpg" ></a>
                 <a><p>Jiji mug from Kiki's Delivary Service</p></a>
                 <a><p>$19</p></a>
+                <div class="popup-window" id="km-popup">
+                    <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonkm">X</button>
+                    <img src="kiki-mug.jpg">
+                    <h1 style="padding-top: 200px;">Jiji mug from Kiki's Delivary Service</h1>
+                    <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonkm">Purchase Now</button>
+                </div>
+                <script>
+                    var kmPopupLink = document.getElementById("km-popup-link");
+                    var kmPopupWindow = document.getElementById("km-popup");
+                    var closekmButton = document.getElementById("close-buttonkm");
+                    var buykmButton = document.getElementById("buy-buttonkm");
+                
+                    kmPopupLink.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        kmPopupWindow.style.display = "block";
+                    });
+                
+                    closekmButton.addEventListener("click", function () {
+                        kmPopupWindow.style.display = "none";
+                    });
+                
+                    buykmButton.addEventListener("click", function () {
+                        kmPopupWindow.style.display = "none";
+                    });
+                </script>
             </div>
             <div class="product" id="mug">
-                <a><img src="Totoro-Family-Grey-Mug.jpg" ></a>
+                <a href="#" id="tm-popup-link"><img src="Totoro-Family-Grey-Mug.jpg" ></a>
                 <a><p>Totoro Mug</p></a>
-
                 <a><p>$19</p></a>
+                <div class="popup-window" id="tm-popup">
+                    <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttontm">X</button>
+                    <img src="Totoro-Family-Grey-Mug.jpg">
+                    <h1 style="padding-top: 200px;">Totoro Mug</h1>
+                    <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttontm">Purchase Now</button>
+                </div>
+                <script>
+                    var tmPopupLink = document.getElementById("tm-popup-link");
+                    var tmPopupWindow = document.getElementById("tm-popup");
+                    var closetmButton = document.getElementById("close-buttontm");
+                    var buytmButton = document.getElementById("buy-buttontm");
+                
+                    tmPopupLink.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        tmPopupWindow.style.display = "block";
+                    });
+                
+                    closetmButton.addEventListener("click", function () {
+                        tmPopupWindow.style.display = "none";
+                    });
+                
+                    buytmButton.addEventListener("click", function () {
+                        tmPopupWindow.style.display = "none";
+                    });
+                </script>
             </div>
             <div class="product" id="mug">
-                <a><img src="studio-ghibli-circle-mug-1024x1024.jpg" ></a>
+                <a href="#" id="gm-popup-link"> <img src="studio-ghibli-circle-mug-1024x1024.jpg" ></a>
                 <a><p>Studio Ghibli Mug</p></a>
-
                 <a><p>$19</p></a>
+                <div class="popup-window" id="gm-popup">
+                    <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttongm">X</button>
+                    <img src="studio-ghibli-circle-mug-1024x1024.jpg">
+                    <h1 style="padding-top: 200px;">Studio Ghibli Mug</h1>
+                    <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttongm">Purchase Now</button>
+                </div>
+                <script>
+                    var gmPopupLink = document.getElementById("gm-popup-link");
+                    var gmPopupWindow = document.getElementById("gm-popup");
+                    var closegmButton = document.getElementById("close-buttongm");
+                    var buygmButton = document.getElementById("buy-buttongm");
+                
+                    gmPopupLink.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        gmPopupWindow.style.display = "block";
+                    });
+                
+                    closegmButton.addEventListener("click", function () {
+                        gmPopupWindow.style.display = "none";
+                    });
+                
+                    buygmButton.addEventListener("click", function () {
+                        gmPopupWindow.style.display = "none";
+                    });
+                </script>
             </div>
             <div class="product" id="mug">
-                <a><img src="no-face-kaonashi-funny-mug-12oz.jpg" ></a>
+                <a href="#" id="nm-popup-link"><img src="no-face-kaonashi-funny-mug-12oz.jpg" ></a>
                 <a><p>Spirited Away No-Face Mug</p></a>
 
                 <a><p>$19</p></a>
+                <div class="popup-window" id="nm-popup">
+                    <button style="float: Right;background-color: black;color: white;border-radius: 50px;" id="close-buttonnm">X</button>
+                    <img src="no-face-kaonashi-funny-mug-12oz.jpg">
+                    <h1 style="padding-top: 200px;">Studio Ghibli Mug</h1>
+                    <button style="color: white;background-color:rgb(106, 196, 252) ;width:300px;border: solid 2px rgb(106, 196, 252);border-radius:5px;" id="buy-buttonnm">Purchase Now</button>
+                </div>
+                <script>
+                    var nmPopupLink = document.getElementById("nm-popup-link");
+                    var nmPopupWindow = document.getElementById("nm-popup");
+                    var closenmButton = document.getElementById("close-buttonnm");
+                    var buynmButton = document.getElementById("buy-buttonnm");
+                
+                    nmPopupLink.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        nmPopupWindow.style.display = "block";
+                    });
+                
+                    closenmButton.addEventListener("click", function () {
+                        nmPopupWindow.style.display = "none";
+                    });
+                
+                    buynmButton.addEventListener("click", function () {
+                        nmPopupWindow.style.display = "none";
+                    });
+                </script>
             </div>
         </ul>
         <div class="bottom"> 
@@ -256,7 +472,7 @@
                     <li><a style="text-decoration:none" href="index.html">Return To Home</a></li>
                     <li><a style="text-decoration: none;"href="film_list.html">Films</a></li>
                     <li><a style="text-decoration: none;"href="merchandise.html">Merchandise</a></li>
-                    <li><a style="text-decoration: none;" href="'">Help</a></li>
+                    <li><a style="text-decoration: none;" href="help.html">Help</a></li>
                 </ul>
             </div>
             <div class="related_links">
