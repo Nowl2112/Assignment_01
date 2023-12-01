@@ -478,7 +478,8 @@ font-size: 9px;
         margin-left: 25px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;} 
+        flex-wrap: wrap;
+        margin-bottom: 25px;} 
 .product{
         margin-left: 0 auto;
         margin-bottom: 10px;
